@@ -9,7 +9,7 @@ export default function App() {
   return (
     <ImageSizeContext.Provider value={imageSize}>
       <>
-        <h1>AWS 배포 과제 - 최종 수정(npm run deploy)</h1>
+        <h1>Hello, CICD</h1>
         <label>
           <input
             type="checkbox"
@@ -28,8 +28,6 @@ export default function App() {
 }
 
 function List() {
-  const imageSize = useContext(ImageSizeContext);
-
   const listItems = places.map((place) => (
     <li key={place.id}>
       <Place place={place} />
@@ -39,8 +37,6 @@ function List() {
 }
 
 function Place({ place }) {
-  const imageSize = useContext(ImageSizeContext);
-
   return (
     <>
       <PlaceImage place={place} />
