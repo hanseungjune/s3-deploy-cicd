@@ -9,7 +9,7 @@ export default function App() {
   return (
     <ImageSizeContext.Provider value={imageSize}>
       <>
-        <h1>Hello, CICD Very Difficult</h1>
+        <h1>Hello, CICD Very Difficulty</h1>
         <label>
           <input
             type="checkbox"
